@@ -1,0 +1,318 @@
+
+
+<div class="card-body">
+
+    <div class="container">
+
+        <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#myModal">
+          Add Insight
+        </button>
+      
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              <div class="modal-header">
+            
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="modal-body">
+                <form [formGroup]='myform' (ngSubmit)="submitdata()">
+                  
+                    <div class="container-fluid" style="width:700px">
+                  <label for="">Insight Name *</label>
+                  <input type="text " class="form-control" formControlName='hed'>
+
+                <label for="">Enter description *</label>
+               
+               
+               
+              <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='meta'></textarea>
+                <label>Image1</label>
+                <input type="file" class="form-control" multiple   name="img1" ngModel  formControlName='file'  (change)="onfileupload1($event)">
+      
+               <!-- <label>Image2</label>
+                <input type="file" class="form-control" multiple   name="img2" ngModel  formControlName='file1'  (change)="onfileupload2($event)"> 
+       -->
+              
+              </div>
+              <div class="container-fluid" style="width:700px">
+              <label for="">Heading 1 *</label>
+              <input type="text" name="hed1" class="form-control" formControlName="hed1">
+              
+                            <label for="">Enter description *</label>
+                           
+                            <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des1'></textarea>
+
+                        </div>
+                          <div class="container-fluid" style="width:700px">
+                            <label for="">Heading 2 *</label>
+                            <input type="text" name="hed2" class="form-control" formControlName="hed2">
+                            
+                                          <label for="">Enter description *</label>
+                                         
+                                          <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des2'></textarea>
+                                        </div>
+                                        <div class="container-fluid" style="width:700px">
+                                          <label for="">Heading 3 *</label>
+                                          <input type="text" name="hed3" class="form-control" formControlName="hed3">
+                                          
+                                                        <label for="">Enter description *</label>
+                                                       
+                                                        <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des3'></textarea>
+                                                    </div>
+                                                      <div class="container-fluid" style="width:700px">
+                                                        <label for="">Heading 4 *</label>
+                                                        <input type="text" name="hed1" class="form-control" formControlName="hed4">
+                                                        
+                                                                      <label for="">Enter description *</label>
+                                                                     
+                                                                      <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des4'></textarea>
+
+                                                                    </div>
+                                                                    <div class="container-fluid" style="width:700px">
+                                                                      <label for="">Heading 5 *</label>
+                                                                      <input type="text" name="hed1" class="form-control" formControlName="hed5">
+                                                                      
+                                                                                    <label for="">Enter description *</label>
+                                                                                   
+                                                                                    <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des5'></textarea>
+
+                                                                                  </div>
+                                                                                  <div class="container-fluid" style="width:700px">
+                                                                                    <label for="">Heading 6</label>
+                                                                                    <input type="text" name="hed1" class="form-control" formControlName="hed6">
+                                                                                    
+                                                                                                  <label for="">Enter description </label>
+                                                                                                 
+                                                                                                  <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des6'></textarea>
+                                                                                                </div>
+                                                                                                <div class="container-fluid" style="width:700px">
+                                                                                                  <label for="">Heading 7</label>
+                                                                                                  <input type="text" name="hed7" class="form-control" formControlName="hed7">
+                                                                                                  
+                                                                                                                <label for="">Enter description </label>
+                                                                                                               
+                                                                                                                <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des7'></textarea>
+                                                                                                            </div>
+                                                                                                              <div class="container-fluid" style="width:700px">
+                                                                                                                <label for="">Heading 8</label>
+                                                                                                                <input type="text" name="hed8" class="form-control" formControlName="hed8">
+                                                                                                                
+                                                                                                                              <label for="">Enter description</label>
+                                                                                                                             
+                                                                                                                              <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des8'></textarea>
+                                                                                                                            </div>
+                                                                                                                            <div class="container-fluid" style="width:700px">
+                                                                                                                              <label for="">Heading 9 </label>
+                                                                                                                              <input type="text" name="hed9" class="form-control" formControlName="hed9">
+                                                                                                                              
+                                                                                                                                            <label for="">Enter description 
+                                                                                                                                              
+                                                                                                                                            </label>
+                                                                                                                                           
+                                                                                                                                            <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des9'></textarea>
+                                                                                                                                        </div>
+                                                                                                                                           <div class="container-fluid" style="width:700px">
+              <label for="">Heading 10</label>
+              <input type="text" name="hed10" class="form-control" formControlName="hed10">
+              
+                            <label for="">Enter description</label>
+                           
+\                            <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des10'></textarea>
+</div>
+
+
+                                        <div class="container-fluid" style="width:700px">
+                                        <button class="btn btn-secondary mt-3">Submit</button>
+                                        </div>
+              </form>
+            
+           
+        
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+    <table id="example1" class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th>Insight</th>
+        <th>Description</th>
+        <th>Update</th>
+        <th>Delete</th>
+        
+      </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let d of data">
+          <td>
+{{d.hed}}
+          </td>
+          <td>
+            {{d.meta}}
+                      </td>
+                      <td>
+                        <button class="btn btn-primary" (click)=edit(d.id)  data-toggle="modal" data-target="#myModal1">Edit</button>
+                                  </td>
+                                  <td>
+                                    <button class="btn btn-danger" (click)=delete(d.id) >Delete</button>
+                                              </td>
+        </tr>
+      </tbody>
+    
+    </table>
+
+
+    <div class="container">
+
+        <!-- Button to Open the Modal -->
+        
+      
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal1">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              <div class="modal-header">
+            
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="modal-body">
+                <form [formGroup]='myform' *ngFor="let d of edata">
+                  
+                    <div class="container-fluid" style="width:700px">
+                  <label for="">Insight Name *</label>
+                  <input type="text " class="form-control" formControlName='hed' [(ngModel)]="d.hed" >
+
+                <label for="">Enter description *</label>
+               
+               
+               
+              <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='meta'  [(ngModel)]="d.meta"></textarea>
+                <label>Image1</label>
+                <input type="file" class="form-control" multiple   name="img1" ngModel  formControlName='file'  (change)="onfileupload1($event)">
+      
+               <!-- <label>Image2</label>
+                <input type="file" class="form-control" multiple   name="img2" ngModel  formControlName='file1'  (change)="onfileupload2($event)"> 
+       -->
+              
+              </div>
+              <div class="container-fluid" style="width:700px">
+              <label for="">Heading 1 *</label>
+              <input type="text" name="hed1" class="form-control" formControlName="hed1"  [(ngModel)]="d.hed1">
+              
+                            <label for="">Enter description *</label>
+                           
+                            <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des1'  [(ngModel)]="d.des1"></textarea>
+
+                        </div>
+                          <div class="container-fluid" style="width:700px">
+                            <label for="">Heading 2 *</label>
+                            <input type="text" name="hed2" class="form-control" formControlName="hed2"  [(ngModel)]="d.hed2">
+                            
+                                          <label for="">Enter description *</label>
+                                         
+                                          <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des2'  [(ngModel)]="d.des2"></textarea>
+                                        </div>
+                                        <div class="container-fluid" style="width:700px">
+                                          <label for="">Heading 3 *</label>
+                                          <input type="text" name="hed3" class="form-control" formControlName="hed3"  [(ngModel)]="d.hed3">
+                                          
+                                                        <label for="">Enter description *</label>
+                                                       
+                                                        <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des3'  [(ngModel)]="d.des3"></textarea>
+                                                    </div>
+                                                      <div class="container-fluid" style="width:700px">
+                                                        <label for="">Heading 4 *</label>
+                                                        <input type="text" name="hed1" class="form-control" formControlName="hed4"  [(ngModel)]="d.hed4">
+                                                        
+                                                                      <label for="">Enter description *</label>
+                                                                     
+                                                                      <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des4'  [(ngModel)]="d.des4"></textarea>
+
+                                                                    </div>
+                                                                    <div class="container-fluid" style="width:700px">
+                                                                      <label for="">Heading 5 *</label>
+                                                                      <input type="text" name="hed1" class="form-control" formControlName="hed5"  [(ngModel)]="d.hed5">
+                                                                      
+                                                                                    <label for="">Enter description *</label>
+                                                                                   
+                                                                                    <textarea name="" id="" cols="30" rows="10" class="form-control"  [(ngModel)]="d.des5" formControlName='des5'></textarea>
+
+                                                                                  </div>
+                                                                                  <div class="container-fluid" style="width:700px">
+                                                                                    <label for="">Heading 6</label>
+                                                                                    <input type="text" name="hed1" class="form-control" formControlName="hed6"  [(ngModel)]="d.hed6">
+                                                                                    
+                                                                                                  <label for="">Enter description </label>
+                                                                                                 
+                                                                                                  <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des6'  [(ngModel)]="d.des6"></textarea>
+                                                                                                </div>
+                                                                                                <div class="container-fluid" style="width:700px">
+                                                                                                  <label for="">Heading 7</label>
+                                                                                                  <input type="text" name="hed7" class="form-control" formControlName="hed7"  [(ngModel)]="d.hed7">
+                                                                                                  
+                                                                                                                <label for="">Enter description </label>
+                                                                                                               
+                                                                                                                <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des7'  [(ngModel)]="d.des7"></textarea>
+                                                                                                            </div>
+                                                                                                              <div class="container-fluid" style="width:700px">
+                                                                                                                <label for="">Heading 8</label>
+                                                                                                                <input type="text" name="hed8" class="form-control" formControlName="hed8"  [(ngModel)]="d.hed8">
+                                                                                                                
+                                                                                                                              <label for="">Enter description</label>
+                                                                                                                             
+                                                                                                                              <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des8'  [(ngModel)]="d.des"></textarea>
+                                                                                                                            </div>
+                                                                                                                            <div class="container-fluid" style="width:700px">
+                                                                                                                              <label for="">Heading 9 </label>
+                                                                                                                              <input type="text" name="hed9" class="form-control" formControlName="hed9"  [(ngModel)]="d.hed9">
+                                                                                                                              
+                                                                                                                                            <label for="">Enter description 
+                                                                                                                                              
+                                                                                                                                            </label>
+                                                                                                                                           
+                                                                                                                                            <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des9'  [(ngModel)]="d.des9"></textarea>
+                                                                                                                                        </div>
+                                                                                                                                           <div class="container-fluid" style="width:700px">
+              <label for="">Heading 10</label>
+              <input type="text" name="hed10" class="form-control" formControlName="hed10"  [(ngModel)]="d.hed10">
+              
+                            <label for="">Enter description</label>
+                           
+\                            <textarea name="" id="" cols="30" rows="10" class="form-control" formControlName='des10'  [(ngModel)]="d.des10"></textarea>
+</div>
+
+
+                                        <div class="container-fluid" style="width:700px">
+                                        <button class="btn btn-primary mt-3" (click)="update(d.id)">Update</button>
+                                        </div>
+              </form>
+            
+           
+        
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+  
+
+
+ 
+    </div>
